@@ -49,7 +49,7 @@ document.getElementById("yesBtn").onclick = () => {
 
   emailjs.send(
     "service_rnhqdk9",   // <-- paste service ID
-    "YOUR_TEMPLATE_ID",  // <-- paste template ID
+    "template_di67bmb",  // <-- paste template ID
     templateParams
   )
   .then(() => {
