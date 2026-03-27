@@ -120,9 +120,9 @@ document.getElementById("copyBtn").onclick = async () => {
 const rainWrap = document.getElementById("emojiRain");
 const rainEmojis = ["🍓","🩷","🐸","🍄","🍰","✨"];
 const rainImages = [
-  "images/rain/mooshroom.png",
-  "images/rain/strawberry-shortcake.png",
-  "images/rain/—Pngtree—cute capybara hand drawn_21114346.PNG"
+  "mooshroom.png",
+  "/strawberry-shortcake.png",
+  "—Pngtree—cute capybara hand drawn_21114346.PNG"
 ];
 
 function spawnRain(){
