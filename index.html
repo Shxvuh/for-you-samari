@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍓 For Samari</title>
+  <meta name="theme-color" content="#ffb6d5" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Background rain -->
+<div class="emojiRain" id="emojiRain" aria-hidden="true"></div>
+
+<!-- 🎵 Background music -->
+<audio id="bgMusic" loop>
+  <source src="audio/back of the club.mp3" type="audio/mpeg">
+</audio>
+
+<div class="wrap">
+  <div class="card">
+
+
+    <div class="topbar">
+      <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      <h1>for Samari Calvillo 🩷</h1>
+    </div>
+
+    <div class="content">
+
+      <!-- SCREEN 1 -->
+      <section class="screen active" id="screen1">
+        <div class="hero">
+          <div class="badge">🍓 Strawberry sweet</div>
+          <h2 class="title">Hi Samari 🩷</h2>
+          <p class="subtitle">I made this little pink strawberry world just for you.</p>
+
+                    <!-- 🎵 Volume control -->
+          <div class="volumeWrap">
+            <span>🔈</span>
+            <input type="range" id="volumeSlider" min="0" max="100" value="10">
+            <span>🔊</span>
+          </div>
+
+          <div class="ctaRow">
+            <button class="btnPrimary" id="toMiniBtn">Enter ✨</button>
+          </div>
+        </div>
+
+        <div class="section">
+          <strong class="centerStrong">A few things I adore about you</strong>
+
+          <div class="grid">
+            <div class="tile">
+              <div class="ico">🍓</div>
+              <div>
+                <h3>Falling for you</h3>
+                <p>Falling for you has been worth every moment, you are such a joy to be around and I love spoiling you. There is nothing I would want more than for you to be my girlfriend</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="ico">🐸</div>
+              <div>
+                <h3>Your vibe</h3>
+                <p>You make me laugh and feel like I am not judged, just enjoyed. You have shown me a love I didn't know existed.</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="ico">🩷</div>
+              <div>
+                <h3>You</h3>
+                <p>You are genuinely beautiful and worth every second. There is not a minute that goes by where I don't think about you. You are truly gorgeous inside and out.</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="ico">🍄</div>
+              <div>
+                <h3>My world</h3>
+                <p>You have become my entire world.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ctaRow mt14">
+            <button class="btnPrimary" id="toMiniBtn2">Next: feed the mooshroom 🍓</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 2 -->
+      <section class="screen" id="screen2">
+        <div class="hero">
+          <div class="badge">🍄 tiny quest</div>
+          <h2 class="title">Feed the mooshroom</h2>
+          <p class="subtitle">Give 5 strawberry treats 🍓</p>
+        </div>
+
+        <div class="section mini">
+          <div class="cowWrap">
+            <div class="treat" id="treat">🍓</div>
+            <img src="images/mooshroom.png" alt="Mooshroom" class="mooshroom" />
+          </div>
+
+          <div class="meter"><i id="meterFill"></i></div>
+          <p class="hint" id="hintText">Tap Feed 🍓</p>
+
+          <div class="ctaRow">
+            <button class="btnPrimary" id="feedBtn">Feed 🍓</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 3 -->
+      <section class="screen" id="screen3">
+        <div class="hero">
+          <div class="badge">🍓 Strawberry Shortcake</div>
+          <h2 class="title">A sweet moment</h2>
+        </div>
+
+        <div class="section shortcake">
+          <img src="images/strawberry-shortcake.png" alt="Strawberry Shortcake" class="shortcakeImg" />
+
+          <p>
+            Everything with you feels soft, pink, and sweet.
+            Like a Strawberry Shortcake world I never want to leave.
+          </p>
+
+          <p class="darkLine">
+            I promise to stalk you,
+            be obsessed with you, never let you leave my side even when you don't realise Im there.
+            You will remain my greatest obsession until the day I die.
+          </p>
+
+          <div class="ctaRow mt14">
+            <button class="btnPrimary" id="toQuestionBtn">One last thing 💗</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 4 -->
+      <section class="screen" id="screen4">
+        <div class="hero">
+          <h2 class="title">Samari…</h2>
+          <p class="subtitle">Will you be my girlfriend?</p>
+        </div>
+
+        <div class="section question">
+          <div class="yesNo">
+            <button class="btnYes" id="yesBtn">Yes 💗</button>
+            <button class="btnNo" id="noBtn">No 🙈</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCREEN 5 -->
+      <section class="screen" id="screen5">
+        <div class="hero">
+          <h2 class="title">You said yes 🩷</h2>
+          <p class="subtitle">I am so happy</p>
+        </div>
+
+        <div class="section final">
+          <div class="emojiRow">🍓🐸🍄🍰🩷</div>
+          <p>
+            Thank you for being you, Samari.
+            I cannot wait to build our lives together.
+          </p>
+
+          <div class="ctaRow mt14">
+            <button class="btnPrimary" id="replayBtn">Replay ✨</button>
+            <button class="btnGhost" id="copyBtn">Copy link 📲</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("YOUR_PUBLIC_KEY"); // <-- paste public key here
+})();
+</script>
+
+
+<script src="script.js"></script>
+</body>
+</html>
